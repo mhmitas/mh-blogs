@@ -2,8 +2,6 @@ import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import Image from 'next/image'
 
-// This would typically come from your API or CMS
-
 export default function AllBlogs() {
     return (
         <div className="my-container max-w-screen-xl mx-auto mt-10 mb-16">
@@ -13,7 +11,7 @@ export default function AllBlogs() {
                     <div key={i} className="group relative rounded-lg overflow-hidden shadow-lg dark:border bg-background max-w-md mx-auto">
                         <figure className='aspect-video bg-muted overflow-hidden'>
                             <Image
-                                src={`https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062004.jpg?t=st=1725594170~exp=1725597770~hmac=c841441e071792f2dded23d4a3737172b85aed66b6d4cbe8d316be0c458acc5c&w=900`}
+                                src={`https://i.ibb.co/njsVy0h/html-css-collage-concept-with-person-23-2150062004.jpg`}
                                 alt="Blog post thumbnail"
                                 width={500}
                                 height={400}
