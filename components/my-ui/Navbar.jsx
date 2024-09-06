@@ -7,6 +7,7 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu"
+import { ModeToggle } from "../ModeToggle"
 
 export default function Navbar() {
 
@@ -18,7 +19,7 @@ export default function Navbar() {
     ]
 
     return (
-        <nav className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-md shadow-sm z-50 dark:border-b">
+        <nav className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md shadow-sm dark:border-b">
             <div className="my-container">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex-shrink-0">
@@ -32,11 +33,12 @@ export default function Navbar() {
                                 <Link
                                     key={item.name}
                                     href={item.href}
-                                    className="hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                                    className="hover:text-info px-3 py-2 rounded-md text-sm font-medium transition-colors"
                                 >
                                     {item.name}
                                 </Link>
                             ))}
+                            <ModeToggle />
                         </div>
                     </div>
                     <div className="hidden md:block">
@@ -52,7 +54,7 @@ export default function Navbar() {
                         </Button>
                         <DropdownMenu>
                             <DropdownMenuTrigger asChild>
-                                <Button variant="outline" size="icon">
+                                <Button variant="ghost" size="icon">
                                     <Menu className="h-6 w-6" />
                                     <span className="sr-only">Open menu</span>
                                 </Button>
@@ -65,6 +67,7 @@ export default function Navbar() {
                                         </Link>
                                     </DropdownMenuItem>
                                 ))}
+                                <ModeToggle />
                             </DropdownMenuContent>
                         </DropdownMenu>
                     </div>
