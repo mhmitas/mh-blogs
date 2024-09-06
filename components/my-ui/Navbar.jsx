@@ -8,6 +8,8 @@ import {
     DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu"
 import { ModeToggle } from "../ModeToggle"
+import Image from "next/image"
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
 
 export default function Navbar() {
 
@@ -42,16 +44,16 @@ export default function Navbar() {
                         </div>
                     </div>
                     <div className="hidden md:block">
-                        <Button variant="ghost" size="icon" className="ml-4">
-                            <User className="h-5 w-5" />
-                            <span className="sr-only">Profile</span>
-                        </Button>
+                        <Avatar className="cursor-pointer">
+                            <AvatarImage src="https://i.ibb.co/tJ8827Y/unnamed.png" alt="@mitas" />
+                            <AvatarFallback>CN</AvatarFallback>
+                        </Avatar>
                     </div>
-                    <div className="md:hidden flex items-center">
-                        <Button variant="ghost" size="icon" className="mr-2">
-                            <User className="h-5 w-5" />
-                            <span className="sr-only">Profile</span>
-                        </Button>
+                    <div className="md:hidden flex items-center gap-1">
+                        <Avatar>
+                            <AvatarImage src="https://i.ibb.co/tJ8827Y/unnamed.png" alt="@mitas" />
+                            <AvatarFallback>CN</AvatarFallback>
+                        </Avatar>
                         <DropdownMenu>
                             <DropdownMenuTrigger asChild>
                                 <Button variant="ghost" size="icon">
