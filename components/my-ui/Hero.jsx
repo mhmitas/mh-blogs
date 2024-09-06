@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <section className="relative w-full py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 mb-12 overflow-hidden">
             <Image
-                src="https://img.freepik.com/free-photo/male-hand-with-pencil-cup_155003-6446.jpg?t=st=1725589856~exp=1725593456~hmac=38766e31b315d21d4c8380a101658236951901d23b1aff36587ae22ab7c81142&w=996"
+                src="https://res.cloudinary.com/dquqygs9h/image/upload/v1725591869/jianpiehrvol6vixkueh.jpg"
                 alt="Background"
                 layout="fill"
                 objectFit="cover"

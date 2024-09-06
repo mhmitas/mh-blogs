@@ -1,17 +1,17 @@
-import Image from 'next/image';
 import React from 'react';
 import { Button } from '../ui/button';
+import Image from 'next/image';
 
-const FeaturedPosts = () => {
+const RecentlyUploaded = () => {
     return (
         <section className="my-container mb-16">
-            <h2 className="title-1 mb-8 text-start">Featured Posts</h2>
+            <h2 className="title-1 mb-8 text-start">Recently Uploaded</h2>
             <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
                 {[1, 2, 3].map((i) => (
                     <div key={i} className="group relative rounded-lg overflow-hidden shadow-lg dark:border bg-background">
                         <figure className='aspect-video bg-muted overflow-hidden'>
                             <Image
-                                src={`/assets/1.jpg`}
+                                src={`https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062004.jpg?t=st=1725594170~exp=1725597770~hmac=c841441e071792f2dded23d4a3737172b85aed66b6d4cbe8d316be0c458acc5c&w=900`}
                                 alt="Blog post thumbnail"
                                 width={500}
                                 height={400}
@@ -34,4 +34,4 @@ const FeaturedPosts = () => {
     );
 };
 
-export default FeaturedPosts;
+export default RecentlyUploaded;
